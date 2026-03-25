@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMÓS — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #ccc; line-height: 1.7; padding: 40px 20px; }
+        .container { max-width: 700px; margin: 0 auto; }
+        h1 { font-size: 28px; color: #fff; margin-bottom: 8px; letter-spacing: 2px; }
+        .subtitle { color: #666; font-size: 14px; margin-bottom: 40px; }
+        h2 { font-size: 18px; color: #fff; margin-top: 32px; margin-bottom: 12px; }
+        p { margin-bottom: 16px; font-size: 15px; }
+        a { color: #5599ff; text-decoration: none; }
+        .lang-toggle { display: inline-block; margin-bottom: 30px; padding: 6px 16px; border: 1px solid #333; border-radius: 20px; color: #888; font-size: 13px; cursor: pointer; }
+        .ja { display: none; }
+        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #1a1a2a; color: #444; font-size: 13px; }
+    </style>
+    <script>
+        function toggleLang() {
+            const en = document.querySelectorAll('.en');
+            const ja = document.querySelectorAll('.ja');
+            const btn = document.getElementById('langBtn');
+            const showingEn = en[0].style.display !== 'none';
+            en.forEach(el => el.style.display = showingEn ? 'none' : 'block');
+            ja.forEach(el => el.style.display = showingEn ? 'block' : 'none');
+            btn.textContent = showingEn ? 'English' : '日本語';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>ATMÓS</h1>
+        <p class="subtitle">Privacy Policy</p>
+        <span class="lang-toggle" id="langBtn" onclick="toggleLang()">日本語</span>
+        <div class="en">
+            <h2>Overview</h2>
+            <p>ATMÓS is an ambient sound generator app. We are committed to protecting your privacy.</p>
+            <h2>Data Collection</h2>
+            <p>ATMÓS does not collect, store, or transmit any personal data. The app runs entirely on your device.</p>
+            <h2>Audio Generation</h2>
+            <p>All sounds are generated in real time on your device. No audio data is recorded or sent anywhere.</p>
+            <h2>In-App Purchases</h2>
+            <p>Transactions are processed securely through Apple's App Store. We do not access your payment info.</p>
+            <h2>Third-Party Services</h2>
+            <p>ATMÓS does not use any third-party analytics, advertising, or tracking services.</p>
+            <h2>Contact</h2>
+            <p>Questions? Contact: <a href="mailto:1985kaoss@gmail.com">1985kaoss@gmail.com</a></p>
+        </div>
+        <div class="ja">
+            <h2>概要</h2>
+            <p>ATMÓSはアンビエントサウンド生成アプリです。お客様のプライバシー保護に努めています。</p>
+            <h2>データ収集</h2>
+            <p>ATMÓSは個人データの収集、保存、送信を一切行いません。</p>
+            <h2>音声生成</h2>
+            <p>すべてのサウンドはデバイス上でリアルタイムに生成されます。</p>
+            <h2>アプリ内課金</h2>
+            <p>取引はAppleのApp Storeを通じて安全に処理されます。</p>
+            <h2>お問い合わせ</h2>
+            <p>ご質問：<a href="mailto:1985kaoss@gmail.com">1985kaoss@gmail.com</a></p>
+        </div>
+        <div class="footer"><p>Effective: March 2026 | ATMÓS by Hiroya Tanaka</p></div>
+    </div>
+</body>
+</html>
