@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMÓS — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #ccc; line-height: 1.7; padding: 40px 20px; }
+        .container { max-width: 700px; margin: 0 auto; }
+        h1 { font-size: 28px; color: #fff; margin-bottom: 8px; letter-spacing: 2px; }
+        .subtitle { color: #666; font-size: 14px; margin-bottom: 40px; }
+        h2 { font-size: 18px; color: #fff; margin-top: 32px; margin-bottom: 12px; }
+        p { margin-bottom: 16px; font-size: 15px; }
+        a { color: #5599ff; text-decoration: none; }
+        .lang-toggle { display: inline-block; margin-bottom: 30px; padding: 6px 16px; border: 1px solid #333; border-radius: 20px; color: #888; font-size: 13px; cursor: pointer; }
+        .ja { display: none; }
+        .faq { background: #111; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+        .faq h3 { color: #fff; font-size: 15px; margin-bottom: 8px; }
+        .faq p { color: #999; font-size: 14px; margin-bottom: 0; }
+        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #1a1a2a; color: #444; font-size: 13px; }
+    </style>
+    <script>
+        function toggleLang() {
+            const en = document.querySelectorAll('.en');
+            const ja = document.querySelectorAll('.ja');
+            const btn = document.getElementById('langBtn');
+            const showingEn = en[0].style.display !== 'none';
+            en.forEach(el => el.style.display = showingEn ? 'none' : 'block');
+            ja.forEach(el => el.style.display = showingEn ? 'block' : 'none');
+            btn.textContent = showingEn ? 'English' : '日本語';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>ATMÓS</h1>
+        <p class="subtitle">Support & FAQ</p>
+        <span class="lang-toggle" id="langBtn" onclick="toggleLang()">日本語</span>
+        <div class="en">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <h3>What is ATMÓS?</h3>
+                <p>ATMÓS is a generative ambient sound app that creates endless soundscapes in real time using audio synthesis. No loops, no recordings.</p>
+            </div>
+            <div class="faq">
+                <h3>How do the sound modes work?</h3>
+                <p>Choose from SLEEP, RELAX, MEDITATE, or FOCUS. Each mode uses different synthesis parameters to create the ideal atmosphere.</p>
+            </div>
+            <div class="faq">
+                <h3>What is the weather feature?</h3>
+                <p>ATMÓS uses your location's weather data to shape the soundscape. Rain, wind, snow, and storms all influence the generated audio.</p>
+            </div>
+            <div class="faq">
+                <h3>What is the Sleep Timer?</h3>
+                <p>An optional in-app purchase that lets you set 10, 30, 60, or 90 minute timers to auto-stop playback.</p>
+            </div>
+            <div class="faq">
+                <h3>Does the app work offline?</h3>
+                <p>Yes! All sounds are generated on-device. Weather features require an internet connection.</p>
+            </div>
+            <h2>Contact</h2>
+            <p>Need help? Email us: <a href="mailto:1985kaoss@gmail.com">1985kaoss@gmail.com</a></p>
+        </div>
+        <div class="ja">
+            <h2>よくある質問</h2>
+            <div class="faq">
+                <h3>ATMÓSとは？</h3>
+                <p>リアルタイムのオーディオ合成で無限のアンビエントサウンドスケープを生成するアプリです。</p>
+            </div>
+            <div class="faq">
+                <h3>モードの違いは？</h3>
+                <p>SLEEP、RELAX、MEDITATE、FOCUSの4つのモードがあり、それぞれ異なる合成パラメータで最適な音環境を作ります。</p>
+            </div>
+            <div class="faq">
+                <h3>天候機能とは？</h3>
+                <p>現在地の天候データに基づいてサウンドスケープが変化します。雨、風、雪、嵐が音に反映されます。</p>
+            </div>
+            <div class="faq">
+                <h3>スリープタイマーとは？</h3>
+                <p>10/30/60/90分のタイマーで再生を自動停止するアプリ内課金機能です。</p>
+            </div>
+            <div class="faq">
+                <h3>オフラインで使えますか？</h3>
+                <p>はい。すべての音はデバイス上で生成されます。天候機能にはインターネット接続が必要です。</p>
+            </div>
+            <h2>お問い合わせ</h2>
+            <p>サポートが必要な場合：<a href="mailto:1985kaoss@gmail.com">1985kaoss@gmail.com</a></p>
+        </div>
+        <div class="footer"><p>ATMÓS by Hiroya Tanaka</p></div>
+    </div>
+</body>
+</html>
